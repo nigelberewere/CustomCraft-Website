@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quote | CustomCraft Carpenters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">CC</span>
+          CustomCraft Carpenters
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="quote.html">Request Quote</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="hamburger" type="button">Menu</button>
+          <a class="btn btn-primary" href="tel:+263771000000">Call Now</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Request a Quote</span>
+        <h1>Get Your Free Roofing & Ceiling Inspection</h1>
+        <p>
+          Share your project details and our specialist team will respond quickly with a tailored
+          recommendation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Tell Us About Your Project</h2>
+          <p>
+            We serve residential and commercial clients across Zimbabwe. Provide your details and we&apos;ll
+            schedule a site visit or call within 24 hours.
+          </p>
+          <div class="service-list">
+            <div>✔ Free inspection and assessment</div>
+            <div>✔ Detailed quote with material recommendations</div>
+            <div>✔ Reliable timelines and transparent pricing</div>
+          </div>
+        </div>
+        <div class="form-card">
+          <form id="quoteForm">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="tel" name="phone" placeholder="Phone Number" required />
+            <input type="text" name="location" placeholder="Location / City" required />
+            <select name="service" required>
+              <option value="" disabled selected>Service Type</option>
+              <option value="roofing-installation">Roofing Installation</option>
+              <option value="roofing-repair">Roof Leak Repair</option>
+              <option value="industrial-sheeting">Industrial Sheeting</option>
+              <option value="pvc-ceilings">PVC Ceiling</option>
+              <option value="rhino-board">Rhino Board</option>
+              <option value="skimming">Skimming & Finishing</option>
+              <option value="cornices">Decorative Cornices</option>
+            </select>
+            <textarea name="description" placeholder="Project Description" required></textarea>
+            <button class="btn btn-primary" type="submit">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container">
+        <h3>Prefer to talk now? Our team is ready.</h3>
+        <a class="btn btn-outline" href="tel:+263771000000">Call Now</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>CustomCraft Carpenters</h4>
+          <p>
+            Specialist carpentry firm delivering premium roofing and ceiling services across Zimbabwe.
+            We protect homes from the elements and enhance interior beauty.
+          </p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Phone: +263 771 000 000</p>
+          <p>Email: info@customcraft.co.zw</p>
+          <p>Hours: Mon - Sat, 8:00am - 6:00pm</p>
+        </div>
+        <div>
+          <h4>Service Area</h4>
+          <div class="map">
+            <iframe
+              title="Service Area Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59244.59225530598!2d31.0127504!3d-17.8251666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4a8c0d2b381%3A0x5f7084f57b6af48f!2sHarare!5e0!3m2!1sen!2szw!4v1739251200000"
+              width="100%"
+              height="200"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> CustomCraft Carpenters. All rights reserved.</span>
+        <span>Built for rugged performance.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
