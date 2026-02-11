@@ -544,6 +544,8 @@ textarea {
 
 .design-info {
   padding: 18px;
+  background: rgba(31, 31, 31, 0.8);
+  border-top: 1px solid rgba(255, 106, 0, 0.2);
 }
 
 .design-info h4 {
@@ -563,7 +565,7 @@ textarea {
 }
 
 .design-desc {
-  color: #b0b0b0;
+  color: var(--text);
   font-size: 13px;
   line-height: 1.5;
 }
@@ -633,5 +635,122 @@ textarea {
 
   .design-cta p {
     font-size: 14px;
+  }
+}
+
+/* Image Modal Lightbox */
+.image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.image-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border-radius: 8px;
+  animation: zoomIn 0.3s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: var(--orange);
+  font-size: 36px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  z-index: 2001;
+}
+
+.modal-close:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+.modal-nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.modal-nav-btn {
+  padding: 12px 24px;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.modal-nav-btn:hover {
+  background: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.3);
+}
+
+.modal-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .modal-content img {
+    max-height: 60vh;
+  }
+
+  .modal-nav-btn {
+    padding: 10px 16px;
+    font-size: 12px;
   }
 }
