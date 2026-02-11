@@ -85,38 +85,202 @@
     <section class="section light">
       <div class="container">
         <div class="section-header">
-          <h2>Ceiling Transformations</h2>
-          <p>PVC, Rhino board, skimming, and decorative cornices.</p>
+          <h2>Ceiling Design Gallery</h2>
+          <p>Explore beautiful ceiling designs to inspire your next project. Find the style that matches your vision.</p>
         </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80"
-              alt="Ceiling before upgrade"
-            />
-            <span>Before</span>
+
+        <!-- Ceiling Design Filters -->
+        <div class="ceiling-filters">
+          <button class="filter-btn active" data-filter="all">All Designs</button>
+          <button class="filter-btn" data-filter="modern">Modern</button>
+          <button class="filter-btn" data-filter="classic">Classic</button>
+          <button class="filter-btn" data-filter="decorative">Decorative</button>
+          <button class="filter-btn" data-filter="minimalist">Minimalist</button>
+          <button class="filter-btn" data-filter="textured">Textured</button>
+        </div>
+
+        <!-- Ceiling Designs Grid -->
+        <div class="ceiling-gallery">
+          <!-- Modern Designs -->
+          <div class="ceiling-card" data-category="modern">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80"
+                alt="Modern sleek white ceiling"
+              />
+              <div class="design-overlay">
+                <p>Sleek Modern White</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Sleek Modern White</h4>
+              <p class="design-type">Modern / Minimalist</p>
+              <p class="design-desc">Clean lines with integrated lighting. Perfect for contemporary homes.</p>
+            </div>
           </div>
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=900&q=80"
-              alt="Ceiling after upgrade"
-            />
-            <span>After</span>
+
+          <div class="ceiling-card" data-category="modern">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6b01efb2e90d?auto=format&fit=crop&w=600&q=80"
+                alt="Modern geometric ceiling design"
+              />
+              <div class="design-overlay">
+                <p>Geometric Modern</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Geometric Modern</h4>
+              <p class="design-type">Modern / Geometric</p>
+              <p class="design-desc">Bold geometric patterns with modern appeal. Makes a strong statement.</p>
+            </div>
           </div>
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
-              alt="Interior ceiling before"
-            />
-            <span>Before</span>
+
+          <!-- Classic Designs -->
+          <div class="ceiling-card" data-category="classic">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1600566753086-00f18282e969?auto=format&fit=crop&w=600&q=80"
+                alt="Classic coffered ceiling"
+              />
+              <div class="design-overlay">
+                <p>Coffered Classic</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Coffered Classic</h4>
+              <p class="design-type">Classic / Elegant</p>
+              <p class="design-desc">Timeless coffered design with deep recesses. Adds luxury and depth.</p>
+            </div>
           </div>
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=80"
-              alt="Interior ceiling after"
-            />
-            <span>After</span>
+
+          <div class="ceiling-card" data-category="classic">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+                alt="Classic cream ceiling with cornices"
+              />
+              <div class="design-overlay">
+                <p>Cream with Cornices</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Cream with Cornices</h4>
+              <p class="design-type">Classic / Traditional</p>
+              <p class="design-desc">Soft cream finish with decorative cornices. Timeless elegance.</p>
+            </div>
           </div>
+
+          <!-- Decorative Designs -->
+          <div class="ceiling-card" data-category="decorative">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80"
+                alt="Decorative suspended ceiling"
+              />
+              <div class="design-overlay">
+                <p>Suspended Artistic</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Suspended Artistic</h4>
+              <p class="design-type">Decorative / Artistic</p>
+              <p class="design-desc">Artistic suspended design with visual interest. Premium finish.</p>
+            </div>
+          </div>
+
+          <div class="ceiling-card" data-category="decorative">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80"
+                alt="Decorative ornate ceiling"
+              />
+              <div class="design-overlay">
+                <p>Ornate Decorative</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Ornate Decorative</h4>
+              <p class="design-type">Decorative / Ornate</p>
+              <p class="design-desc">Intricate ornamental patterns. Perfect for luxury spaces.</p>
+            </div>
+          </div>
+
+          <!-- Minimalist Designs -->
+          <div class="ceiling-card" data-category="minimalist">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1615529162924-f76694c3dffe?auto=format&fit=crop&w=600&q=80"
+                alt="Minimalist flat white ceiling"
+              />
+              <div class="design-overlay">
+                <p>Flat Minimalist</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Flat Minimalist</h4>
+              <p class="design-type">Minimalist / Simple</p>
+              <p class="design-desc">Pure simplicity. Clean, flat surface with no embellishments.</p>
+            </div>
+          </div>
+
+          <div class="ceiling-card" data-category="minimalist">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80"
+                alt="Minimalist with integrated lighting"
+              />
+              <div class="design-overlay">
+                <p>Minimal + Light</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Minimalist with Lighting</h4>
+              <p class="design-type">Minimalist / Modern</p>
+              <p class="design-desc">Integrated lighting strips in minimalist design. Functional and sleek.</p>
+            </div>
+          </div>
+
+          <!-- Textured Designs -->
+          <div class="ceiling-card" data-category="textured">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6b01efb2e90d?auto=format&fit=crop&w=600&q=80"
+                alt="Textured popcorn ceiling"
+              />
+              <div class="design-overlay">
+                <p>Textured Finish</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Textured Finish</h4>
+              <p class="design-type">Textured / Acoustic</p>
+              <p class="design-desc">Acoustic textured surface. Great for sound control.</p>
+            </div>
+          </div>
+
+          <div class="ceiling-card" data-category="textured">
+            <div class="ceiling-image">
+              <img
+                src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80"
+                alt="Wooden textured ceiling"
+              />
+              <div class="design-overlay">
+                <p>Wooden Textured</p>
+              </div>
+            </div>
+            <div class="design-info">
+              <h4>Wooden Textured</h4>
+              <p class="design-type">Textured / Natural</p>
+              <p class="design-desc">Warm wooden texture. Brings natural warmth to interiors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="design-cta">
+          <h3>Found your style?</h3>
+          <p>Let's bring your ceiling vision to life. Our expert team will guide you through materials, finishes, and installation.</p>
+          <a class="btn btn-primary" href="quote.html">Request a Free Design Consultation</a>
         </div>
       </div>
     </section>
