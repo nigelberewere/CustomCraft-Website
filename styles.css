@@ -275,11 +275,16 @@ header {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: rgba(31, 31, 31, 0.85);
-  padding: 6px 12px;
+  background: linear-gradient(135deg, rgba(230, 57, 70, 0.95) 0%, rgba(193, 18, 31, 0.98) 100%);
+  padding: 8px 16px;
   border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .testimonial {

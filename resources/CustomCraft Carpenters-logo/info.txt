@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Changa-Regular
+font link: https://www.fontsquirrel.com/fonts/changa
+font author: Eduardo Tunni
+font author site: http://www.tipo.net.ar/
+Slogan Font: SpaceMono-Regular.ttf
+
+icon designer: Adam Iscrupe
+icon designer link: /creator/adamiscrupe/
+        
+{"bg":"#732924","icon":"#E3A489","font":"#ffffff","slogan":"#ffffff"}
+      
