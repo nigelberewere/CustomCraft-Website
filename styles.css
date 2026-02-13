@@ -108,20 +108,45 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .logo-mark {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--oak) 0%, var(--oak-dark) 100%);
-  display: grid;
-  place-items: center;
-  color: var(--white);
-  font-weight: 800;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+}
+
+.logo-mark[src$=".svg"],
+.logo-mark[src$=".png"],
+.logo-mark[src$=".jpg"] {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+@media (max-width: 600px) {
+  .logo-mark {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
+}
+
+@media (max-width: 600px) {
+  .footer-logo {
+    width: 80px;
+  }
 }
 
 .nav-links {
